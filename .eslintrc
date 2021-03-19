@@ -1,5 +1,5 @@
 {
-  "extends": ["airbnb", "plugin:@typescript-eslint/recommended"],
+  "extends": ["airbnb", "plugin:@typescript-eslint/recommended", "react-app"],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": 2018,
@@ -14,6 +14,7 @@
         ".tsx"
       ]
     }],
+    "react/jsx-props-no-spreading": 0,
     "import/prefer-default-export": 0,
     "import/extensions": [1, "ignorePackages", {
       "ts": "never",
@@ -32,7 +33,7 @@
     },
     "import/extensions": [".ts", ".tsx"],
     "react": {
-      "version": "defect"
+      "version": "detect"
     }
   },
   "env": {

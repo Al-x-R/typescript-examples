@@ -1,6 +1,11 @@
+// Core
 // eslint-disable-next-line no-use-before-define
 import React, { FC } from 'react';
+import { Provider } from 'react-redux';
 
-const App: FC = () => <h1>Welcome</h1>;
+// Other
+import { store } from './store/store';
 
-export default App;
+export const App: FC = () => (
+  <Provider store={store} />
+);
