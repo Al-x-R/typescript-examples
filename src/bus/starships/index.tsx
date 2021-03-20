@@ -1,4 +1,3 @@
-// eslint-disable-next-line no-use-before-define
 import React, { ReactElement, FC } from 'react';
 import { useStarshipsFetch } from './hooks/useStarshipsFetch';
 import { Title } from '../../components/title';
@@ -14,6 +13,7 @@ export const Starships: FC = () => {
     || data.results.map(
       ({ name }: Starship, index: number): ReactElement => <li key={Number(index)}>{name}</li>,
     );
+  console.log(listJSX);
 
   return (
     <>

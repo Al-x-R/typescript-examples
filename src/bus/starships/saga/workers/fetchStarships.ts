@@ -1,9 +1,6 @@
 // Tools
 import {
-  startFetching,
-  stopFetching,
-  fill,
-  setfetchingError,
+  startFetching, stopFetching, fill, setfetchingError,
 } from '../../action';
 
 // Types
@@ -15,7 +12,7 @@ import { makeRequestWithSpinner } from '../../../../workers';
 // API
 import { api } from '../../../../api';
 
-export function* fetchStarships() {
+export function* fetchStarships(): Generator {
   const options = {
     fetcher: api.starships.fetch,
     startFetching,

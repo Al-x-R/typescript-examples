@@ -23,6 +23,10 @@ const Header: FC<PropTypes> = ({ title }: PropTypes) => {
     <>
       <h1>{titleString}</h1>
       <h3>{counter.toFixed()}</h3>
+      {/* eslint-disable-next-line react/button-has-type */}
+      <button onClick={increase}>increase</button>
+      {/* eslint-disable-next-line react/button-has-type */}
+      <button onClick={decrease}>decrease</button>
     </>
   );
 };

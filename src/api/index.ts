@@ -7,7 +7,7 @@ type APIFetchDataType = {
   starships: {
     fetch: FetchDataType<Starships>;
   };
-}
+};
 
 export const api: APIFetchDataType = {
   starships: {
