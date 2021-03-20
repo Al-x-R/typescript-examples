@@ -6,6 +6,8 @@ import { Provider } from 'react-redux';
 // Other
 import { store } from './store/store';
 
-export const App: FC = () => (
+const App: FC = () => (
   <Provider store={store} />
 );
+
+export default App;
